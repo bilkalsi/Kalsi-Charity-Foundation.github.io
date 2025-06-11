@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalsi Foundation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f0f4f8;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    a {
+      color: #007a73;
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    header {
+      background: url("images/homepage.jpg") no-repeat center center/cover;
+      height: 420px;
+      color: white;
+      position: relative;
+      box-shadow: inset 0 0 0 1000px rgba(0, 102, 102, 0.55);
+    }
+    .logo {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+    .logo img {
+      height: 60px;
+      border-radius: 8px;
+      border: 2px solid white;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 3px;
+    }
+    .header-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 85%;
+      background-color: rgba(0, 102, 102, 0.75);
+      padding: 18px 28px;
+      border-radius: 14px;
+      font-weight: 500;
+      font-size: 1.2rem;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+      line-height: 1.5;
+      font-style: italic;
+      font-family: 'Georgia', serif;
+    }
+
+    nav {
+      background-color: #007a73;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    nav a {
+      color: #f0f4f8;
+      font-size: 1.1rem;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus {
+      background-color: #004d4d;
+      outline: none;
+    }
+
+    section {
+      background: white;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    }
+    section h2 {
+      color: #006666;
+      font-weight: 700;
+      margin-bottom: 18px;
+      border-bottom: 3px solid #00a89c;
+      padding-bottom: 8px;
+      font-size: 1.9rem;
+    }
+    section p {
+      font-size: 1.1rem;
+      color: #3b3b3b;
+      margin-bottom: 18px;
+      white-space: pre-line;
+    }
+
+    ul {
+      margin-left: 20px;
+      font-size: 1.1rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .gallery img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    #partners img {
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    #partners img:hover {
+      transform: scale(1.02);
+    }
+
+    #contact p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+      color: #004d4d;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: #004d4d;
+      color: #d1e8e2;
+      text-align: center;
+      padding: 18px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      margin-top: 40px;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 640px) {
+      .header-text {
+        font-size: 1.05rem;
+        padding: 15px 18px;
+        max-width: 90%;
+      }
+      nav {
+        gap: 14px;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      section {
+        margin: 20px 12px;
+        padding: 25px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/partner-logo.png" alt="Kalsi Foundation Logo" />
+  </div>
+  <div class="header-text">
+    <h1>A fundamental concern for others would go a long way in making the world a better place</h1>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#mission">Mission</a>
+  <a href="#focus">Our Focus Areas</a>
+  <a href="#projects">Projects</a>
+  <a href="#support">Support Our Work</a>
+  <a href="#partners">Our Partners</a>
+  <a href="#partner">Partner with us</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Kalsi Charity Foundation is a humanitarian nonprofit organization dedicated to creating lasting impact in underserved communities, with a strong focus on Internally Displaced Persons (IDPs), women, and vulnerable groups across Nigeria. Our goal is to break the cycle of poverty, promote dignity, and empower lives through inclusive development initiatives.
+
+We believe in sustainable, people-centered solutions that promote social justice, gender equality, and human rights, and we operate with the highest standards of compassion, transparency, and accountability.</p>
+</section>
+
+<section id="mission">
+  <h2>Our Mission</h2>
+  <p>To empower individuals and communities through education, health care, economic opportunities, and humanitarian assistance — driving sustainable development and improving the quality of life among IDPs and marginalized populations.</p>
+</section>
+
+<section id="focus">
+  <h2>Our Focus Areas</h2>
+  <p>Our programs are centered around these critical areas:</p>
+  <ul>
+    <li>We provide empowerment skills and sustainable livelihood opportunities to help break the cycle of poverty among IDPs and disadvantaged communities</li>
+    <li>We champion initiatives that seek to end violence against women, promote gender equality, economic empowerment, leadership participation, and support community transformation aligned with global development goals</li>
+    <li>We advocate for the rights of IDPs and support their integration into inclusive communities where all individuals have equal rights, representation, and access to opportunities. We work to save lives and reduce suffering through the provision of social amenities in underserved areas</li>
+    <li>Our commitment includes the distribution of reading materials, scholarship programs, free medical care, feeding and clothing drives, and the improvement of community infrastructure — all aimed at supporting educational and health advancement</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Our Projects</h2>
+  <p>Here are some highlights from our recent initiatives:</p>
+  <div class="gallery">
+    <img src="images/project1.jpg" alt="Project 1" />
+    <img src="images/project2.jpg" alt="Project 2" />
+    <img src="images/project3.jpg" alt="Project 3" />
+    <img src="images/project4.jpg" alt="Project 4" />
+    <img src="images/project5.jpg" alt="Project 5" />
+  </div>
+</section>
+
+<section id="support">
+  <h2>Support Our Work</h2>
+  <p>Your contributions help us reach more communities in need, provide essential services, and build a brighter future for displaced and marginalized individuals.</p>
+  <p>Every donation, no matter how small, makes a big impact.</p>
+  <p><a href="https://www.globalpay.ng/welcome" target="_blank" style="background-color: #007a73; color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold;">Donate Now</a></p>
+</section>
+
+<section id="partners">
+  <h2>Our Partners</h2>
+  <p>We are proud to work in collaboration with Herda Consultation Service, a strategic consultancy firm that connects us with donors and funding partners. Their support plays a vital role in advancing our mission and expanding our reach.</p>
+  <img src="images/Partnership.jpg" alt="Our Partners" />
+</section>
+
+<section id="partner">
+  <h2>Partner with Us</h2>
+  <p>Kalsi Charity Foundation is open to affiliations, partnerships, and collaborations with individuals, organizations, and corporate bodies that share our vision. If you are interested in supporting our programs or becoming a donor, we welcome your involvement in creating meaningful and sustainable change.</p>
+  <p>Together, we can build a more inclusive, equitable, and empowered society. Let’s uplift communities — one life at a time.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: info@kalsifoundation.org</p>
+  <p>Phone: +234-(0) 8133321907, +234-(0) 8062443071</p>
+  <p>Address: No. 13 Upper Floor, Falm Shopping Mall, Yahya Madaki Way, Katsina</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Kalsi Foundation. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
